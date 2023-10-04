@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+</head>
+<body>
+    <h1>Gerenciamento de Produtos</h1>
+
+    <button onclick="lerProdutos()">Ler Todos os Produtos</button>
+    
+    <h2>Produtos</h2>
+    <ul id="listaProdutos"></ul>
+    
+    <h2>Inserir Produto</h2>
+    <input type="text" id="novoProdutoNome" placeholder="Nome do Novo Produto">
+    <button onclick="inserirProduto()">Inserir Produto</button>
+
+
+    <h2>Editar Produto</h2>
+    <input type="text" id="produtoId" placeholder="ID do Produto">
+    <input type="text" id="novoNome" placeholder="Novo Nome do Produto">
+    <button onclick="editarProduto()">Editar Produto</button>
+
+    <h2>Excluir Produto</h2>
+    <input type="text" id="produtoIdExcluir" placeholder="ID do Produto para Excluir">
+    <button onclick="excluirProduto()">Excluir Produto</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Produtos</h1>
+
+    <h2>Cadastrar Novo Produto</h2>
+    <label for="nomeProduto">Nome do Produto:</label>
+    <input type="text" id="nomeProduto" placeholder="Nome do produto">
+    <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+
+    <h2>Produtos</h2>
+    <table id="tabelaProdutos">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </table>
+
+    <h2>Editar Produto</h2>
+    <label for="idEditar">ID do Produto:</label>
+    <input type="text" id="idEditar" placeholder="ID do produto a ser editado">
+    <label for="novoNome">Novo Nome:</label>
+    <input type="text" id="novoNome" placeholder="Novo nome do produto">
+    <button onclick="editarProduto()">Editar Produto</button>
+
+    <h2>Excluir Produto</h2>
+    <label for="idExcluir">ID do Produto:</label>
+    <input type="text" id="idExcluir" placeholder="ID do produto a ser excluído">
+    <button onclick="excluirProduto()">Excluir Produto</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
